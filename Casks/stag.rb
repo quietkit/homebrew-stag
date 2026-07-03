@@ -7,7 +7,7 @@ cask "stag" do
   desc "macOS screenshot and screen recording app"
   homepage "https://github.com/quietkit/Stag"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "Stag.app"
@@ -28,7 +28,8 @@ cask "stag" do
     "~/Library/Saved Application State/com.ganwar.Stag.savedState",
   ]
 
-  caveats do
-    screen_recording "Stag needs Screen Recording permission. Grant it in System Settings > Privacy & Security > Screen Recording."
-  end
+  caveats <<~EOS
+    Stag needs Screen Recording permission.
+    Grant it in System Settings > Privacy & Security > Screen Recording.
+  EOS
 end
