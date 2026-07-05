@@ -1,6 +1,6 @@
 cask "stag" do
-  version "1.1.0"
-  sha256 "ef4d2fcc1dae27606c33c1bbf01f5a0dd48e39651b37e6174bf41bf326a19946"
+  version "1.2.0"
+  sha256 "93f748bd13378dba513a6259dfcb4283ce6236e83d0a4bd49c5c427ed0f78ff0"
 
   url "https://github.com/quietkit/Stag/releases/download/v#{version}/Stag-#{version}.tar.gz"
   name "Stag"
